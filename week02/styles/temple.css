@@ -16,15 +16,43 @@ header, footer {
 }
 
 /* Styles for the main content container */
+/*
+  The following CSS styles implement the requirements of the W02 assignment.
+  Ensure you have completed the week's learning activities before applying these styles.
+*/
+
+/* Limit the width of the main element */
 main {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 840px;
+}
+
+
+nav {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+/* Styles for the new aside element */
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2); /* Subtle, transparent border effect */
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+/* Set width and auto height for images inside the aside to maintain aspect ratio */
+aside img {
+    width: 200px;
+    height: auto;
 }
 
 /* Styles for headings */
 h1{
-    margin: 10px;
-    text-align: center;
+    color: steelblue;
 }
 
 h2 {
@@ -32,13 +60,14 @@ h2 {
     color: #007bff;
 }
 
-/* Styles the image within the picture element to be responsive */
-img {
-    width: 100%;
+/* Change the specific style for the profile image inside the main element */
+main img {
+    width: 150px;
     height: auto;
-    box-shadow: 30px 20px 30px #333;
-    border-radius: 8px;
-    margin-top: 1rem;
+    border: 1px solid steelblue; /* Add a steelblue border around the profile image */
+    padding: 2px; /* Add padding to create space between the image and the border */
+    box-shadow: 0 0 30px gray; /* Add a gray shadow around the profile image for a subtle glowing effect */
+    /* Add any other styles like margin, border, etc. here if needed */
 }
 
 /* Styles for the sections (About and Visiting Info) */
@@ -76,7 +105,15 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Styles for the footer (which needs to be added to your HTML) */
-footer {
-    font-size: 0.9rem;
+/* Change the paragraph padding property value to 0 pixels */
+p {
+    padding: 0;
 }
+
+/* Apply CSS to the footer element for separation, distinction, and text alignment */
+footer {
+    margin-top: 15px; /* 1. Add top margin to separate it from main content */
+    border-top: 1px solid #000; /* 2. Add top border for distinction */
+    text-align: center; /* 3. Align text to the center */
+}
+
