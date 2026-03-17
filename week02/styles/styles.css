@@ -1,45 +1,43 @@
-/* Styles for the main content container */
-/*
-  The following CSS styles implement the requirements of the W02 assignment.
-  Ensure you have completed the week's learning activities before applying these styles.
-*/
-
-/* Limit the width of the main element */
-main {
+body {
     max-width: 840px;
 }
-/* Ensure you use proper values for colors/etc. in a real project */
 
-nav {
-    background-color: #333; /* Example value */
-    padding: 10px;          /* Example value */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
 nav a {
-    color: white;           /* Example value */
-    padding: 10px 15px;     /* Example value */
-    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
 }
 
 h1 {
-    color: #0056b3;         /* Example value */
+    color: steelblue;
 }
 
 main img {
-    width: 200px;
-    height: auto;           /* Or a specific value like 300px */
-    border: 2px solid #ccc; /* Example value */
-    padding: 5px;           /* Example value */
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Example value */
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
+p {
+    padding: 0;}
+
 aside {
-    width: 300px;           /* Example value */
-    margin: 20px;           /* Example value */
-    border: 1px solid #ddd; /* Example value */
-    padding: 15px;          /* Example value */
-    background-color: #f4f4f4; /* Example value */
-    color: #333;            /* Example value */
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* 1 */
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
 }
 
 aside img {
@@ -47,12 +45,9 @@ aside img {
     height: auto;
 }
 
-p {
-    padding: 0;
-}
 
 footer {
-    margin-top: 20px;
-    border-top: 1px solid #ccc;
+    margin-top: 1e;
+    border-top: 1px solid #0000;
     text-align: center;
 }
