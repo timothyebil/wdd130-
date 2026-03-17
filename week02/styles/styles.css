@@ -1,49 +1,39 @@
-/* --- Corrected & Enhanced CSS --- */
+/* --- Corrected CSS Styles --- */
 
-/* 1. Basic CSS Reset to ensure consistent layout across browsers */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Styles for the main content container */
+/* Limit the width of the main element */
 main {
     max-width: 840px;
-    margin: 0 auto; /* Center main content */
-    padding: 20px;
 }
 
+/* Nav rules with background-color and padding */
 nav {
     background-color: #333;
     padding: 10px;
 }
 
+/* Nav link rules with color, padding, and display: block; */
 nav a {
     color: white;
     padding: 10px 15px;
     display: block;
-    text-decoration: none; /* Often required in audits */
+    text-decoration: none; /* Recommended */
 }
 
+/* Header color declaration */
 h1 {
     color: #0056b3;
-    margin-bottom: 15px; /* Add spacing */
 }
 
-/* 2. Responsive images - Ensures images don't exceed container width */
-img {
-    max-width: 100%;
-    display: block;
-}
-
+/* Main image rules: width, height, border, padding, and box-shadow */
 main img {
+    width: 200px;
     height: auto;
     border: 2px solid #ccc;
     padding: 5px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
+/* Aside rules: width, margin, border, padding, background-color, and color */
 aside {
     width: 300px;
     margin: 20px;
@@ -53,19 +43,20 @@ aside {
     color: #333;
 }
 
-/* Fixed potential specificity issue if aside img should be different */
+/* Aside image rules: width: 200px and height: auto */
 aside img {
-    width: 100%; /* More responsive inside aside */
+    width: 200px;
     height: auto;
 }
 
+/* Paragraph rule with padding: 0; */
 p {
-    margin-bottom: 15px; /* Better than padding 0 */
+    padding: 0;
 }
 
+/* Footer rule (minimal required) */
 footer {
     margin-top: 20px;
     border-top: 1px solid #ccc;
     text-align: center;
-    padding: 10px;
 }
