@@ -5,26 +5,29 @@ header {
     text-align: center;
 }
 
-nav { /* Corrected: Added nav rule with required properties */
+/* Corrected: Added nav rule with required properties */
+nav {
     background-color: #333;
     padding: 1rem;
 }
 
-nav a { /* Corrected: Added padding and display: block; */
+/* Corrected: Added padding and display: block; */
+nav a {
     color: white;
     text-decoration: none;
     margin: 0 1rem;
-    padding: 0.5rem;
-    display: block;
+    padding: 0.5rem; /* Added missing padding */
+    display: block; /* Added missing display property */
 }
 
 h1 {
     color: steelblue;
 }
 
-main { /* Corrected: Added main rule with required properties */
-    max-width: 800px;
-    margin: 0 auto; /* Optional: centers the main content */
+/* Corrected: Added main rule with required properties */
+main {
+    max-width: 800px; /* Added missing max-width */
+    margin: 0 auto;
 }
 
 main img {
