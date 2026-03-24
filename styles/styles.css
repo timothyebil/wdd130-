@@ -1,49 +1,61 @@
-header { 
-  background-color: #333; 
-  color: white; 
-  padding: 1rem; 
-  text-align: center; 
-} 
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
 
-nav a { 
-  color: white; 
-  text-decoration: none; 
-  margin: 0 1rem; 
-} 
+nav { /* Corrected: Added nav rule with required properties */
+    background-color: #333;
+    padding: 1rem;
+}
 
-h1 { 
-  color: steelblue; 
-} 
+nav a { /* Corrected: Added padding and display: block; */
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    display: block;
+}
 
-main img { 
-  width: 840px; 
-  height: auto; 
-  border: 1px solid steelblue; 
-  padding: 2px; 
-  box-shadow: 0 0 30px gray; 
-} 
+h1 {
+    color: steelblue;
+}
 
-p { 
-  padding: 0;
-} 
+main { /* Corrected: Added main rule with required properties */
+    max-width: 800px;
+    margin: 0 auto; /* Optional: centers the main content */
+}
 
-aside { 
-  width: 20rem; 
-  margin: 1rem; 
-  border: 1px solid rgba(0, 0, 0, 0.2); 
-  padding: 1rem; 
-  background-color: #eee; 
-  color: #333; 
-  text-align: center; 
-} 
+main img {
+    width: 840px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
 
-aside img { 
-  width: 200px; 
-  height: auto; 
-} 
+p {
+    padding: 0;
+}
 
-footer { 
-  margin-top: 15px; 
-  border-top: 1px solid #000; 
-  text-align: center; 
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
 }
