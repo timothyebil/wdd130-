@@ -5,16 +5,18 @@ body {
     padding: 0;
     color: #333;
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Header & Nav */
 header {
     background-color: #004a99; /* Deep blue for water */
     color: white;
-    padding: 1rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on small screens */
 }
 
 header nav a {
@@ -30,6 +32,7 @@ header nav a.active {
 
 .logo img {
     max-height: 50px;
+    display: block;
 }
 
 /* Hero Section */
@@ -43,6 +46,7 @@ header nav a.active {
     height: auto;
     max-height: 400px;
     object-fit: cover;
+    display: block;
 }
 
 .hero h1 {
@@ -54,6 +58,7 @@ header nav a.active {
     background-color: rgba(0,0,0,0.5);
     padding: 10px 20px;
     border-radius: 5px;
+    margin: 0;
 }
 
 /* Main Content Padding */
@@ -61,6 +66,11 @@ main {
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+/* Sections */
+h2 {
+    color: #004a99;
 }
 
 /* Footer */
@@ -74,5 +84,7 @@ footer {
 
 .social img {
     width: 24px;
+    height: 24px;
     margin: 0 5px;
+    vertical-align: middle;
 }
