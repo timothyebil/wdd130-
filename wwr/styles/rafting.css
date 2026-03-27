@@ -1,6 +1,10 @@
 /* General Styles */
+* {
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modernized font stack */
     margin: 0;
     padding: 0;
     color: #333;
@@ -12,7 +16,13 @@ body {
 header {
     background-color: #004a99; /* Deep blue for water */
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,16 +32,23 @@ header {
 header nav a {
     color: white;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 20px;
     font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
 }
 
 header nav a.active {
     text-decoration: underline;
+    color: #ffcc00; /* Highlight color for active page */
 }
 
 .logo img {
-    max-height: 50px;
+    max-height: 60px; /* Slightly larger logo */
     display: block;
 }
 
@@ -39,12 +56,13 @@ header nav a.active {
 .hero {
     position: relative;
     text-align: center;
+    color: white;
 }
 
 .hero img {
     width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 500px;
     object-fit: cover;
     display: block;
 }
@@ -54,11 +72,11 @@ header nav a.active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(0,0,0,0.5);
-    padding: 10px 20px;
+    background-color: rgba(0,0,0,0.6); /* Slightly darker for readability */
+    padding: 15px 30px;
     border-radius: 5px;
     margin: 0;
+    font-size: 2.5rem;
 }
 
 /* Main Content Padding */
@@ -71,6 +89,8 @@ main {
 /* Sections */
 h2 {
     color: #004a99;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
 }
 
 /* Footer */
@@ -78,13 +98,18 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem;
-    margin-top: 20px;
+    padding: 2rem 1rem;
+    margin-top: 40px;
+}
+
+.social {
+    margin-top: 10px;
 }
 
 .social img {
     width: 24px;
     height: 24px;
-    margin: 0 5px;
+    margin: 0 10px;
     vertical-align: middle;
+    filter: invert(1); /* Makes icons white if they are black */
 }
