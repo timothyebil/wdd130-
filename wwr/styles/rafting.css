@@ -90,9 +90,9 @@ section {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* --- Hero Section Styles --- */
+/* --- Hero Section Styles (Corrected & Consolidated) --- */
 .hero {
-    position: relative;
+    position: relative; /* Essential: creates positioning context */
     text-align: center;
     color: white;
     overflow: hidden;
@@ -107,22 +107,42 @@ section {
     height: auto;
     object-fit: cover;
     filter: brightness(60%); /* Darken image for readability */
-}
-
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
-    border-radius: 10px;
+    display: block;
 }
 
 .hero h1 {
+    position: absolute; /* Fixes overlay issue */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Fixed syntax error here */
     color: white;
     font-size: 3rem;
     margin: 0;
+    z-index: 10; /* Ensures it sits on top */
+    width: 100%;
+    padding: 0 10px;
+}
+
+/* --- Added Article Rule --- */
+.hero article {
+    position: absolute; /* Allows positioning over image */
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    color: white;
+    max-width: 40%;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+/* --- Added Image Float Rule --- */
+.hero article img {
+    float: right;
+    margin-left: 10px;
+    width: 100px; /* Example size */
+    height: auto;
+    filter: none; /* Removes brightness filter from thumbnail */
 }
 
 /* --- Specific Section Styles --- */
@@ -181,5 +201,12 @@ footer p {
 
     .hero h1 {
         font-size: 2rem;
+    }
+    
+    .hero article {
+        max-width: 80%;
+        bottom: 10px;
+        right: 10%;
+        font-size: 0.9rem;
     }
 }
